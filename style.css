@@ -38,3 +38,6 @@ body.board-mode .range-labels{display:none}
 body.board-mode .playbar{flex-wrap:wrap}
 body.board-mode .play-actions{width:auto;display:flex;justify-content:flex-end}
 @media(max-width:650px){body.board-mode .play-actions{width:100%;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}body.board-mode .play-actions .primary{width:100%}}
+
+body.board-mode .exit-fullscreen{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:110;background:var(--green);color:white;border:1px solid white;min-height:44px;padding:10px 14px;box-shadow:0 2px 10px #0002;white-space:nowrap}
+body.board-mode .board-heading{padding-right:170px;min-height:48px}
