@@ -30,3 +30,11 @@ body.board-mode .tempo input{flex:1;min-width:40px}
 body.board-mode .tempo strong{font-size:20px;white-space:nowrap}
 body.board-mode .range-labels{display:none}
 @media(max-height:450px){body.board-mode .game{gap:5px;padding:8px}body.board-mode .board-heading h2{font-size:18px}body.board-mode .card{padding-top:14px}body.board-mode .playbar{padding:4px 0}body.board-mode .primary,body.board-mode .exit-fullscreen{padding:6px 12px;min-height:36px}body.board-mode .grid{min-height:100px}}
+
+.play-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.play-actions #shuffle{white-space:nowrap}
+@media(max-width:900px){.play-actions{width:100%;justify-content:flex-end}}
+@media(max-width:650px){.play-actions{width:100%;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}.play-actions #shuffle{white-space:normal;font-size:12px;padding:10px}.play-actions .primary{width:100%;font-size:12px;padding:10px}}
+body.board-mode .playbar{flex-wrap:wrap}
+body.board-mode .play-actions{width:auto;display:flex;justify-content:flex-end}
+@media(max-width:650px){body.board-mode .play-actions{width:100%;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}body.board-mode .play-actions .primary{width:100%}}
